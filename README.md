@@ -9,4 +9,6 @@ This forces bedrock to use the old rendering engine, fixing all the performance 
 <br>
 This even fixes pink glitch somehow.
 # Download
-Click here 
+[Click here](https://github.com/Swedeachu/SwimDragon/releases/download/Public-Release-1.0/SwimDragon.exe)
+# Credits
+NVIDIA, NvAPI, Swim Services, and a bunch of Hive Partners and Devs that helped me test.
