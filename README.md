@@ -12,3 +12,5 @@ This even fixes pink glitch somehow.
 [Click here](https://github.com/Swedeachu/SwimDragon/releases/download/Public-Release-1.0/SwimDragon.exe)
 # Credits
 NVIDIA, NvAPI, Swim Services, and a bunch of Hive Partners and Devs that helped me test.
+# Issues
+Only works for PC players that have RTX cards, sorry mobiles and budget gamers. This might false flag anti viruses since this is driver level software, just ignore it. If you still have issues with input delay then disable low latency mode in your global program settings in nvidia control pannel 3D settings. Debloat your PC as best you can.
