@@ -80,6 +80,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\R525-developer\x86\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(ProjectDir)lib\R525-developer\x86\nvapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -90,12 +92,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)lib\R525-developer\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\R525-developer\x86\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(ProjectDir)lib\R525-developer\x86\nvapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -104,14 +109,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\camde\source\repos\SwimDragon\SwimDragon\lib\R525-developer</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)lib\R525-developer\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
-      <AdditionalDependencies>C:\Users\camde\source\repos\SwimDragon\SwimDragon\lib\R525-developer\amd64\nvapi64.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\camde\source\repos\SwimDragon\SwimDragon\lib\R525-developer\amd64</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\R525-developer\amd64\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(ProjectDir)lib\R525-developer\amd64\nvapi64.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -122,16 +127,38 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)lib\R525-developer\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\R525-developer\amd64\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(ProjectDir)lib\R525-developer\amd64\nvapi64.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="lib\R525-developer\NvApiDriverSettings.c" />
     <ClCompile Include="SwimDragon.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib\R525-developer\nvapi.h" />
+    <ClInclude Include="lib\R525-developer\NvApiDriverSettings.h" />
+    <ClInclude Include="lib\R525-developer\nvapi_lite_common.h" />
+    <ClInclude Include="lib\R525-developer\nvapi_lite_d3dext.h" />
+    <ClInclude Include="lib\R525-developer\nvapi_lite_salend.h" />
+    <ClInclude Include="lib\R525-developer\nvapi_lite_salstart.h" />
+    <ClInclude Include="lib\R525-developer\nvapi_lite_sli.h" />
+    <ClInclude Include="lib\R525-developer\nvapi_lite_stereo.h" />
+    <ClInclude Include="lib\R525-developer\nvapi_lite_surround.h" />
+    <ClInclude Include="lib\R525-developer\nvHLSLExtns.h" />
+    <ClInclude Include="lib\R525-developer\nvHLSLExtnsInternal.h" />
+    <ClInclude Include="lib\R525-developer\nvShaderExtnEnums.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\R525-developer\amd64\nvapi64.lib" />
+    <Library Include="lib\R525-developer\x86\nvapi.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
