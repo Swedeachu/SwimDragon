@@ -8,8 +8,10 @@ Modifies the NVIDIA driver profile for Minecraft to have the hidden setting "Ray
 This forces bedrock to use the old rendering engine, fixing all the performance issues resulting in making the game smoother and have higher FPS.
 <br>
 This even fixes pink glitch somehow.
-# Download
-[Click here](https://github.com/Swedeachu/SwimDragon/releases/download/Public-Release-1.0/SwimDragon.exe)
+# Downloads
+[SwimDragon.exe](https://github.com/Swedeachu/SwimDragon/releases/download/Public-Release-1.0/SwimDragon.exe)
+<br>
+[C++ Installer if needed](https://aka.ms/vs/17/release/vc_redist.x64.exe)
 # Credits
 NVIDIA, NvAPI, Swim Services, and a bunch of Hive Partners and Devs that helped me test.
 # Issues
