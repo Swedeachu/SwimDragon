@@ -14,5 +14,7 @@ This even fixes pink glitch somehow.
 [C++ Installer if needed](https://aka.ms/vs/17/release/vc_redist.x64.exe)
 # Credits
 NVIDIA, NvAPI, Swim Services, and a bunch of Hive Partners and Devs that helped me test.
+<br>
+Also thanks to Ambient for fixing the proj files so compiling out the box now works.
 # Issues
 Only works for PC players that have RTX cards, sorry mobiles and budget gamers. This might false flag anti viruses since this is driver level software, just ignore it. If you still have issues with input delay then disable low latency mode in your global program settings in nvidia control pannel 3D settings. Debloat your PC as best you can.
