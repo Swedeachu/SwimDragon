@@ -5,7 +5,7 @@ Windows 10 or 11, an RTX GPU, and Admin on your PC
 # How it works
 Modifies the NVIDIA driver profile for Minecraft to have the hidden setting "Ray Tracing - (DXR)" to be set to false.
 <br>
-This forces bedrock to use dx11, fixing all the performance issues resulting in making the game smoother and have higher FPS.
+This forces bedrock to use dx12 without ray tracing, fixing all the performance issues resulting in making the game smoother and have higher FPS.
 <br>
 This even fixes pink glitch somehow.
 # Downloads
