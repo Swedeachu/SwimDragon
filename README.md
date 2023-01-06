@@ -1,5 +1,5 @@
 # SwimDragon
-Removes Render Dragon from all versions (only works on windows 10/11 with RTX GPUs)
+Fixes Render Dragon for all versions (only works on windows 10/11 with RTX GPUs)
 # Requirements
 Windows 10 or 11, an RTX GPU, and Admin on your PC
 # How it works
